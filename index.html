@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="dark p-4">
+        <div class="container ">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                  <a class="navbar-brand text-white " href="#">
+                    <div class=" d-flex">
+                       <div class="w-25"> <img src="./imgs/logo@2x.png" class="w-100 " alt="logo"></div>
+                   <div class="d-flex flex-column justify-content-center ">
+                    <p class=" m-0">Weather</p>
+                    <span class="fs-12 text-secondary " >tagline goes here</span>
+                   </div>
+                    </div>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item ">
+                        <a class="nav-link hover-color  mx-2 py-1 px-2 " aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hover-color mx-2 py-1 px-2" href="#">News</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hover-color mx-2 py-1 px-2" href="#">Live Cameras</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hover-color mx-2 py-1 px-2" href="#">Photos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link hover-color mx-2 py-1 px-2" href="#">Contacts</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <main>
+        <section class="image">
+            <div class="container px-2 py-3">
+              <input type="text" placeholder="Find your Location..." class="w-75 rounded-5 px-2 py-2 text-white" id="inputData">
+                <button class="sub-btn ">Find</button>
+            </div>
+        </section>
+        <section class="second-sec"></section>
+        <section class="mini-dark p-5">
+            <div class="container row">
+              <div class="container col-8">
+                <input type="text" placeholder="Enter your E-mail to subscribe..." class="w-75 rounded-5 px-2 py-2 " >
+                <button class="sub-btn ">subscribe</button>
+                <p class="text-white py-3 fs-12">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+              </div>
+             <div class="container col-4">
+              <div class="sub-icons d-flex justify-content-center">
+                <div class="i-bg rounded-circle d-flex align-items-center justify-content-center"> <i class="fa-brands fa-facebook fa-xl"></i></div>
+                <div class="i-bg rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-twitter fa-xl"></i></div>
+                <div class="i-bg rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-google-plus-g fa-xl"></i></div>
+                <div class="i-bg rounded-circle d-flex align-items-center justify-content-center"> <i class="fa-brands fa-pinterest fa-xl"></i></div>              
+              </div>
+             </div>
+            </div>
+        </section>
+        <section class=" weather " id="weatherData">
+            <!-- <div class="container row m-auto rounded-3 opacity-75">
+              <div class="today text-white dark col-3 offset-1 ">
+                <div class="header d-flex justify-content-between"> 
+                  <h4 class="dark">Today</h4>
+                  <span id="date">12 December</span>
+                </div>
+                <div class="location text-capitalize"><p id="location">cairo</p></div>
+                <div class="degree display-3 text-center fw-bolder" id="degree"><p>22°C</p></div>
+                <div class="custom">
+                  <img src="" alt="" id="cond-img">
+                  <p class="main-color" id="cond-txt">partly cloudy</p></div>
+                <span>
+                  <img src="./imgs/icon-umberella.png" alt="">
+                  <span id="precep">20%</span>
+                </span>
+                <span>
+                  <img src="./imgs/icon-wind.png" alt="">
+                  <span id="wind">18km/hr</span>
+                </span>
+                <span>
+                  <img src="./imgs/icon-compass.png" alt="">
+                  <span id="wind-dir">east</span>
+                </span>
+              </div>
+              <div class="today text-white dark col-3 d-flex flex-column align-items-center mini-dark">
+                <div class="header d-flex justify-content-center"> 
+                  <h4 class=" text-capitalize">sunday</h4>
+                </div>
+                <div class="degree display-5 text-center py-3">
+                  <img src="./imgs/113.png" alt="">
+                  <p>22°C</p>
+                </div>
+                <div class="custom">
+                  <p class="main-color">sunny</p>
+                </div>
+              </div>
+              <div class="today text-white dark col-3 d-flex flex-column align-items-center dark">
+                <div class="header d-flex justify-content-center"> 
+                  <h4 class="">Monday</h4>
+                </div>
+                <div class="degree display-5 text-center py-3">
+                  <img src="./imgs/113.png" alt="">
+                  <p>22°C</p>
+                </div>
+                <div class="custom">
+                  <p class="main-color">sunny</p>
+                </div>
+              </div>
+            </div> -->
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/8d1a211f3f.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
